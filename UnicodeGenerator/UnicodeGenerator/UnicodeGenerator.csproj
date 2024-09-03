@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+    <OutputType>WinExe</OutputType>
+    <Nullable>enable</Nullable>
+	<AssemblyTitle>Unicode Text Generator</AssemblyTitle>
+    <Version>1.0.0.2</Version>
+    <Authors>Quilt</Authors>
+    <Company>Quilt Corporation</Company>
+    <Product>Unicode Generator</Product>
+    <PackageTags>unicode</PackageTags>
+    <NeutralLanguage>zh-TW</NeutralLanguage>
+    <Copyright>Copyright © Quilt 2023 All Rights Reserved</Copyright>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'" />
+
+  <ItemGroup>
+    <Content Include="Icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="WindowsFormsIntegration">
+      <HintPath>..\..\..\..\..\..\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\WindowsFormsIntegration.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
